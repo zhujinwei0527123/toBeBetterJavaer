@@ -1,11 +1,16 @@
 ---
+title: 新来个技术总监，彻底把 Java 枚举(enum)讲清楚了
+shortTitle: Java枚举（enum）
 category:
   - Java核心
 tag:
-  - Java
+  - Java重要知识点
+description: Java程序员进阶之路，小白的零基础Java教程，从入门到进阶，新来个技术总监，彻底把 Java 枚举(enum)讲清楚了
+head:
+  - - meta
+    - name: keywords
+      content: Java,Java SE,Java基础,Java教程,Java程序员进阶之路,Java入门,教程,java,枚举,enum
 ---
-
-# Java枚举（enum）
 
 “今天我们来学习枚举吧，三妹！”我说，“同学让你去她家玩了两天，感觉怎么样呀？”
 
@@ -288,5 +293,11 @@ public enum EasySingleton{
 “好勒，这就安排。二哥，你去休息吧。”
 
 “嗯嗯。”讲了这么多，必须跑去抽烟机那里安排一根华子了。
+
+----
+
+最近整理了一份牛逼的学习资料，包括但不限于Java基础部分（JVM、Java集合框架、多线程），还囊括了 **数据库、计算机网络、算法与数据结构、设计模式、框架类Spring、Netty、微服务（Dubbo，消息队列） 网关** 等等等等……详情戳：[可以说是2022年全网最全的学习和找工作的PDF资源了](https://tobebetterjavaer.com/pdf/programmer-111.html)
+
+关注二哥的原创公众号 **沉默王二**，回复**111** 即可免费领取。
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/xingbiaogongzhonghao.png)

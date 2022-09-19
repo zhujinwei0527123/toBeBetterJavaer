@@ -1,11 +1,16 @@
 ---
+title: Java中常用的48个关键字和2个保留字
+shortTitle: 48个关键字和2个保留字
 category:
   - Java核心
 tag:
-  - Java
+  - Java语法基础
+description: Java程序员进阶之路，小白的零基础Java教程，Java中常用的48个关键字和2个保留字
+head:
+  - - meta
+    - name: keywords
+      content: Java,Java SE,Java基础,Java教程,Java程序员进阶之路,Java入门,教程,Java保留字,Java关键字,关键字,保留字
 ---
-
-# Java中常用的48个关键字
 
 “二哥，就我之前学过的这些 Java 代码中，有 public、static、void、main 等等，它们应该都是关键字吧？”三妹的脸上泛着甜甜的笑容，我想她在学习 Java 方面已经变得越来越自信了。
 
@@ -112,7 +117,19 @@ PS：按照首字母的自然顺序排列。
 
 “好了，三妹，关于 Java 中的关键字就先说这 48 个吧，这只是一个大概的介绍，后面还会对一些特殊的关键字单独拎出来详细地讲，比如说重要的 static、final 等。”转动了一下僵硬的脖子后，我对三妹说。
 
-“二哥，你辛苦了，足足 48 个啊，容我好好消化一下。”
+“除了这些关键字，Java 中还有两个非常特殊的保留字（goto 和 const），它们不能在程序中使用。”
+
+“goto 在 C语言中叫做‘无限跳转’语句，在 Java 中，不再使用 goto 语句，因为无限跳转会破坏程序结构。”
+
+“const 在 C语言中是声明常量的关键字，在 Java 中可以使用 public static final 三个关键字的组合来达到常量的效果。”
+
+“好的二哥，我了解了，您辛苦了。”
+
+----
+
+最近整理了一份牛逼的学习资料，包括但不限于Java基础部分（JVM、Java集合框架、多线程），还囊括了 **数据库、计算机网络、算法与数据结构、设计模式、框架类Spring、Netty、微服务（Dubbo，消息队列） 网关** 等等等等……详情戳：[可以说是2022年全网最全的学习和找工作的PDF资源了](https://tobebetterjavaer.com/pdf/programmer-111.html)
+
+关注二哥的原创公众号 **沉默王二**，回复**111** 即可免费领取。
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/xingbiaogongzhonghao.png)
 

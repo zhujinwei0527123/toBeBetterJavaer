@@ -1,23 +1,18 @@
 ---
-title: Java的优势
-shortTitle: Java的优势
+title: Java的特点，Java能做什么
+shortTitle: Java的特点
 category:
-  - Java 核心
+  - Java核心
 tag:
-  - Java
-  - Java SE
-  - Java 基础
-  - Java 教程
-  - Java 程序员进阶之路
-  - Java 入门
-  - Java 简介
+  - Java概述
+description: Java程序员进阶之路，小白的零基础Java教程，Java的优势，Java的特点，Java能做什么
 head:
   - - meta
     - name: keywords
-      content: Java,Java SE,Java 基础,Java 教程,Java 程序员进阶之路,Java 入门,Java 简介
-    - name: description
-      content: Java的优势
+      content: Java,Java SE,Java基础,Java教程,Java程序员进阶之路,Java入门,教程,Java 优势,特点
 ---
+
+# Java的特点，Java能做什么
 
 尽管 Java 已经 25 岁了，但仍然“宝刀未老”。在 Stack Overflow 2019 年流行编程语言调查报告中，Java 位居第 5 位，有 41% 的受调开发者认为 Java 仍然是一门受欢迎的编程语言。
 
@@ -102,5 +97,11 @@ Java 技术对 Web 领域的发展注入了强大的动力，主流的 Java Web 
 - JavaServer Faces 框架，由 Oracle 开发，能够将表示层与应用程序代码轻松连接，它提供了一个 API 集，用于表示和管理 UI 组件。
 
 总之，Oracle 宣称，Java 正运行在 97% 的企业计算机上——有点厉害的样子。
+
+----
+
+最近整理了一份牛逼的学习资料，包括但不限于Java基础部分（JVM、Java集合框架、多线程），还囊括了 **数据库、计算机网络、算法与数据结构、设计模式、框架类Spring、Netty、微服务（Dubbo，消息队列） 网关** 等等等等……详情戳：[可以说是2022年全网最全的学习和找工作的PDF资源了](https://tobebetterjavaer.com/pdf/programmer-111.html)
+
+关注二哥的原创公众号 **沉默王二**，回复**111** 即可免费领取。
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/xingbiaogongzhonghao.png)

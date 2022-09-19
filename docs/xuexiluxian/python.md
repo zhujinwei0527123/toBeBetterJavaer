@@ -5,16 +5,12 @@ shortTitle: Python学习路线
 category:
   - 学习路线
 tag:
-  - Python
-  - Python学习路线
+  - 学习路线
 description: 非 Python职业选手，但工作中学过一段时间，这篇分享给对 Python 感兴趣的爱好者，文中有大量 Python 的学习资源可供下载。
 head:
   - - meta
-    - name: description
-      content: 非 Python职业选手，但工作中学过一段时间，这篇分享给对 Python 感兴趣的爱好者，文中有大量 Python 的学习资源可供下载。
-  - - meta
     - name: keywords
-      content: Python,Python学习路线
+      content: Python,学习路线
 ---
 
 >非 Python职业选手，但工作中学过一段时间，这篇分享给对 Python 感兴趣的爱好者，文中有大量 Python 的学习资源可供下载。
@@ -24,7 +20,7 @@ head:
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/xuexiluxian/python-1.png)
 
 
-**1）视频篇**
+## **1）视频篇**
 
 B 站也就是哔哩哔哩，是国内最大的二次元视频网站之一。作为一个半吊子 up 主，我虽然看视频不多，但现在基本想看视频就直接去 B 站了。
 
@@ -49,7 +45,7 @@ B 站也就是哔哩哔哩，是国内最大的二次元视频网站之一。作
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/xuexiluxian/python-4.png)
 
-**2）教程篇**
+## **2）教程篇**
 
 01、Python 3.10.0 文档，官方文档，毫无疑问是需要学习的。
 
@@ -91,5 +87,13 @@ B 站也就是哔哩哔哩，是国内最大的二次元视频网站之一。作
 - 用Python进行自然语言处理
 - Python编程：从入门到实践
 - PYTHON自然语言处理【中文版】
+
+
+---------
+
+最近整理了一份牛逼的学习资料，包括但不限于Java基础部分（JVM、Java集合框架、多线程），还囊括了 **数据库、计算机网络、算法与数据结构、设计模式、框架类Spring、Netty、微服务（Dubbo，消息队列） 网关** 等等等等……详情戳：[可以说是2022年全网最全的学习和找工作的PDF资源了](https://tobebetterjavaer.com/pdf/programmer-111.html)
+
+关注二哥的原创公众号 **沉默王二**，回复**111** 即可免费领取。
+
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/xingbiaogongzhonghao.png)

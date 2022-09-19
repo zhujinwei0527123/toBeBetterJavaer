@@ -1,13 +1,18 @@
 ---
+title: 如何优雅地打印Java数组？
+shortTitle: 打印Java数组
 category:
   - Java核心
 tag:
-  - Java
+  - 数组&字符串
+description: Java程序员进阶之路，小白的零基础Java教程，从入门到进阶，如何优雅地打印Java数组？
+head:
+  - - meta
+    - name: keywords
+      content: Java,Java SE,Java基础,Java教程,Java程序员进阶之路,Java入门,教程,java数组,打印数组
 ---
 
-# 如何优雅地打印Java数组？
-
-“哥，之前听你说，数组也是一个对象，但 Java 中并未明确的定义这样一个类。”看来三妹有在用心地学习。
+“哥，[之前听你说，数组也是一个对象](https://tobebetterjavaer.com/array/array.html)，但 Java 中并未明确的定义这样一个类。”看来三妹有在用心地学习。
 
 “是的，因此数组也就没有机会覆盖 `Object.toString()` 方法。如果尝试直接打印数组的话，输出的结果并不是我们预期的结果。”我接着三妹的话继续说。
 
@@ -54,7 +59,7 @@ public final class String
 
 “好了，不讨论这个了。”我怕话题扯远了，扯到我自己也答不出来就尴尬了，赶紧把三妹的思路拽了回来。
 
-“我们来看第一种打印数组的方法，使用时髦一点的 Stream 流。”
+“我们来看第一种打印数组的方法，使用时髦一点的[Stream 流](https://tobebetterjavaer.com/java8/stream.html)。”
 
 第一种形式：
 
@@ -82,7 +87,7 @@ Arrays.stream(cmowers).forEach(System.out::println);
 一枚有趣的程序员
 ```
 
-没错，这三种方式都可以轻松胜任本职工作，并且显得有点高大上，毕竟用到了 Stream，以及 lambda 表达式。
+没错，这三种方式都可以轻松胜任本职工作，并且显得有点高大上，毕竟用到了 Stream，以及 [lambda 表达式](https://tobebetterjavaer.com/java8/Lambda.html)。
 
 “当然了，也可以使用比较土的方式，for 循环。甚至 for-each 也行。”
 
@@ -96,7 +101,7 @@ for (String s : cmowers) {
 }
 ```
 
-“哥，你难道忘了[上一篇](https://mp.weixin.qq.com/s/acnDNH6A8USm_EYIT6i-jA)在讲 Arrays 工具类的时候，提到过另外一种方法 `Arrays.toString()` 吗？”三妹看我一直说不到点子上，有点着急了。
+“哥，你难道忘了[上一篇](https://tobebetterjavaer.com/common-tool/arrays.html)在讲 Arrays 工具类的时候，提到过另外一种方法 `Arrays.toString()` 吗？”三妹看我一直说不到点子上，有点着急了。
 
 “当然没有了，我认为 `Arrays.toString()` 是打印数组的最佳方式，没有之一。”我的情绪有点激动。
 
@@ -157,5 +162,12 @@ System.out.println(Arrays.deepToString(deepArray));
 “好的，哥，我记住了。以后遇到的话，我注意下。你去休息吧，我来敲一下你提到的这些代码，练一练。”
 
 “OK，我走，我走。”
+
+
+----
+
+最近整理了一份牛逼的学习资料，包括但不限于Java基础部分（JVM、Java集合框架、多线程），还囊括了 **数据库、计算机网络、算法与数据结构、设计模式、框架类Spring、Netty、微服务（Dubbo，消息队列） 网关** 等等等等……详情戳：[可以说是2022年全网最全的学习和找工作的PDF资源了](https://tobebetterjavaer.com/pdf/programmer-111.html)
+
+关注二哥的原创公众号 **沉默王二**，回复**111** 即可免费领取。
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/xingbiaogongzhonghao.png)

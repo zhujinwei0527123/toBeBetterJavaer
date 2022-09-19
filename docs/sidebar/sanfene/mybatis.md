@@ -1,19 +1,15 @@
 ---
-title: 面渣逆袭（MyBatis面试题）必看👍
+title: 面渣逆袭（MyBatis面试题八股文）必看👍
 shortTitle: 面渣逆袭-MyBatis
 category:
   - 面渣逆袭
 tag:
-  - MyBatis
-  - MyBatis面试题
+  - 面渣逆袭
 description: 图文详解 20 道MyBatis面试高频题，这次吊打面试官，我觉得稳了（手动 dog）
 head:
   - - meta
-    - name: description
-      content: 图文详解 20 道MyBatis面试高频题，这次吊打面试官，我觉得稳了（手动 dog）
-  - - meta
     - name: keywords
-      content: MyBatis面试题,MyBatis
+      content: MyBatis面试题,MyBatis,面试题,八股文
 ---
 
 > 图文详解 20 道MyBatis面试高频题，这次吊打面试官，我觉得稳了（手动 dog）。整理：沉默王二，戳[转载链接](https://mp.weixin.qq.com/s/en2RgcVx52Ql3tYGLfv3Kw)，作者：三分恶，戳[原文链接](https://mp.weixin.qq.com/s/O_5Id2o9IP4loPazJuiHng)。
@@ -989,6 +985,25 @@ MyBatis使用RowBounds对象进行分页，它是针对ResultSet结果集执行�
 可以看一下一个大概的MyBatis通用分页拦截器：
 
 ![Mybatis-通用分页拦截器](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/sidebar/sanfene/mybatis-0bcdca85-e127-44ff-92e0-368a3f089ec8.png)
+
+---
+
+*没有什么使我停留——除了目的，纵然岸旁有玫瑰、有绿荫、有宁静的港湾，我是不系之舟*。
+
+
+**系列内容**：
+
+- [面渣逆袭 Java SE 篇👍](https://tobebetterjavaer.com/sidebar/sanfene/javase.html)
+- [面渣逆袭 Java 集合框架篇👍](https://tobebetterjavaer.com/sidebar/sanfene/javathread.html)
+- [面渣逆袭 Java 并发编程篇👍](https://tobebetterjavaer.com/sidebar/sanfene/collection.html)
+- [面渣逆袭 JVM 篇👍](https://tobebetterjavaer.com/sidebar/sanfene/jvm.html)
+- [面渣逆袭 Spring 篇👍](https://tobebetterjavaer.com/sidebar/sanfene/spring.html)
+- [面渣逆袭 Redis 篇👍](https://tobebetterjavaer.com/sidebar/sanfene/redis.html)
+- [面渣逆袭 MyBatis 篇👍](https://tobebetterjavaer.com/sidebar/sanfene/mybatis.html)
+- [面渣逆袭 MySQL 篇👍](https://tobebetterjavaer.com/sidebar/sanfene/mysql.html)
+- [面渣逆袭操作系统篇👍](https://tobebetterjavaer.com/sidebar/sanfene/os.html)
+- [面渣逆袭计算机网络篇👍](https://tobebetterjavaer.com/sidebar/sanfene/network.html)
+- [面渣逆袭RocketMQ篇👍](https://tobebetterjavaer.com/sidebar/sanfene/rocketmq.html)
 
 ----
 

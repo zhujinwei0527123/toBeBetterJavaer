@@ -2,22 +2,17 @@
 title: 安装Java开发工具包JDK
 shortTitle: 安装Java开发工具包JDK
 category:
-  - Java 核心
+  - Java核心
 tag:
-  - Java
-  - Java SE
-  - Java 基础
-  - Java 教程
-  - Java 程序员进阶之路
-  - Java 入门
-  - Java 简介
+  - Java概述
+description: Java程序员进阶之路，小白的零基础Java教程，JDK的安装和配置
 head:
   - - meta
     - name: keywords
-      content: Java,Java SE,Java 基础,Java 教程,Java 程序员进阶之路,Java 入门,Java 简介
-    - name: description
-      content: JDK的安装和配置
+      content: Java,Java SE,Java基础,Java教程,Java程序员进阶之路,Java入门,教程,JDK 安装,jdk
 ---
+
+# 安装Java开发工具包JDK
 
 因为Java程序必须运行在JVM之上，所以我们 Java 程序员在学习 Java 之前，要做的第一件事情就是安装JDK。
 
@@ -135,6 +130,12 @@ jenv global 17.0.3
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/gongju/brew-cc01fad8-53e9-4474-8923-08e97ac7090a.png)
 
 是不是贼方便？再也不用整这 `echo 'export PATH="/usr/local/opt/openjdk@17/bin:$PATH"' >> ~/.zshrc` 玩意了！爽，实在是爽！
+
+----
+
+最近整理了一份牛逼的学习资料，包括但不限于Java基础部分（JVM、Java集合框架、多线程），还囊括了 **数据库、计算机网络、算法与数据结构、设计模式、框架类Spring、Netty、微服务（Dubbo，消息队列） 网关** 等等等等……详情戳：[可以说是2022年全网最全的学习和找工作的PDF资源了](https://tobebetterjavaer.com/pdf/programmer-111.html)
+
+关注二哥的原创公众号 **沉默王二**，回复**111** 即可免费领取。
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/xingbiaogongzhonghao.png)
 

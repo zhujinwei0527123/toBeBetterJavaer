@@ -1,15 +1,20 @@
 ---
+title: Java 中的数据类型（8 种基本数据类型和引用数据类型）
+shortTitle: Java 中的数据类型
 category:
   - Java核心
 tag:
-  - Java
+  - Java语法基础
+description: Java程序员进阶之路，小白的零基础Java教程，Java 中的数据类型（8 种基本数据类型和引用数据类型）
+head:
+  - - meta
+    - name: keywords
+      content: Java,Java SE,Java基础,Java教程,Java程序员进阶之路,Java入门,教程,Java 简介,Java数据类型,基本数据类型,引用数据类型,数据类型
 ---
 
-# Java 支持的 8 种基本数据类型
+## 数据类型的分类
 
-“二哥，[上一节](https://mp.weixin.qq.com/s/IgBpLGn0L1HZymgI4hWGVA)提到了 Java 变量的数据类型，是不是指定了类型就限定了变量的取值范围啊？”三妹吸了一口麦香可可奶茶后对我说。
-
-“三妹，你不得了啊，长进很大嘛，都学会推理判断了。Java 是一种静态类型的编程语言，这意味着所有变量必须在使用之前声明好，也就是必须得先指定变量的类型和名称。”
+“Java 是一种静态类型的编程语言，这意味着所有变量必须在使用之前声明好，也就是必须得先指定变量的类型和名称。”我吸了一口麦香可可奶茶后对三妹说。
 
 Java 中的数据类型可分为 2 种：
 
@@ -19,13 +24,13 @@ Java 中的数据类型可分为 2 种：
 
 2）**引用数据类型**。
 
-除了基本数据类型以外的类型，都是所谓的引用类型。常见的有数组（对，没错，数组是引用类型）、class（也就是类），以及接口（指向的是实现接口的类的对象）。
+除了基本数据类型以外的类型，都是所谓的引用类型。常见的有[数组](https://tobebetterjavaer.com/array/array.html)（对，没错，数组是引用类型）、class（也就是[类](https://tobebetterjavaer.com/oo/object-class.html)），以及[接口](https://tobebetterjavaer.com/oo/interface.html)（指向的是实现接口的类的对象）。
 
 来个思维导图，感受下。
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/core-grammar/nine-01.png)
 
-通过[上一节](https://mp.weixin.qq.com/s/IgBpLGn0L1HZymgI4hWGVA)的学习，我们知道变量可以分为局部变量、成员变量、静态变量。
+[变量](https://tobebetterjavaer.com/oo/var.html)可以分为局部变量、成员变量、静态变量。
 
 当变量是局部变量的时候，必须得先初始化，否则编译器不允许你使用它。拿 int 来举例吧，看下图。
 
@@ -69,17 +74,19 @@ public class LocalVar {
 | float    | 0.0f     | 4字节 |
 | double   | 0.0      | 8字节 |
 
+## 比特和字节
+
 那三妹可能要问，“比特和字节是什么鬼？”
 
 比特币听说过吧？字节跳动听说过吧？这些名字当然不是乱起的，确实和比特、字节有关系。
 
-**1）bit（比特）**
+### **1）bit（比特）**
 
 比特作为信息技术的最基本存储单位，非常小，但大名鼎鼎的比特币就是以此命名的，它的简写为小写字母“b”。
 
 大家都知道，计算机是以二进制存储数据的，二进制的一位，就是 1 比特，也就是说，比特要么为 0 要么为 1。
 
-**2）Byte（字节）**
+### **2）Byte（字节）**
 
 通常来说，一个英文字符是一个字节，一个中文字符是两个字节。字节与比特的换算关系是：1 字节 = 8 比特。
 
@@ -88,6 +95,8 @@ public class LocalVar {
 （终于知道 1024 和程序员的关系了吧？狗头保命）
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/core-grammar/nine-03.png)
+
+## 基本数据类型
 
 接下来，我们再来详细地了解一下 8 种基本数据类型。
 
@@ -189,9 +198,70 @@ char letterA = 'A'; // 用英文的单引号包裹住。
 
 那三妹可能要问，“char 既然只有一个字符，为什么占 2 个字节呢？”
 
-“主要是因为 Java 使用的是 Unicode 字符集而不是 ASCII 字符集。”
+“主要是因为 Java 使用的是 Unicode 字符集而不是 ASCII 字符集。字符集也可以叫编码，编码不同，实际占用的字节就会不同。”
 
-这又是为什么呢？我们留到下一节再讲。
+[关于字符编码](https://tobebetterjavaer.com/basic-extra-meal/java-unicode.html)
+
+
+## 关于 int 和 char 类型互转
+
+这里整理一波 int 和 char 类型的互转，它们之间比较特殊。也会在以后的学习当中经常遇到。
+
+1）可以通过[强制类型转换](https://tobebetterjavaer.com/basic-grammar/type-cast.html)将整型 int 转换为字符 char。
+
+```java
+public class SimpleTesting {
+    public static void main(String[] args) {
+        int value_int = 65;
+        char value_char  = (char) value_int;
+        System.out.println(value_char);
+    }
+} 
+```
+
+输出 `A`(其 [ASCII 值](https://tobebetterjavaer.com/basic-extra-meal/java-unicode.html)可以通过整数 65 来表示)。
+
+2）可以使用 `Character.forDigit()` 方法将整型 int 转换为字符 char。
+
+```java
+public class SimpleTesting {
+    public static void main(String[] args) {
+        //radix 10 is for decimal number, for hexa use radix 16 
+        int radix = 10; 
+        int value_int = 6;
+        char value_char = Character.forDigit(value_int , radix);
+        System.out.println(value_char );
+    }
+}
+```
+
+radix 为基数，十进制为 10，十六进制为 16。
+
+3）可以使用 int 的包装器类型 Integer 的 toString() 方法+String 的 CharAt() 方法转成 char
+
+```java
+public class SimpleTesting {
+    public static void main(String[] args) {
+        int value_int = 1;
+        char value_char = Integer.toString(value_int).charAt(0);
+System.out.println(value_char );
+    }
+}
+```
+
+4）char 转 int
+
+当然了，如果只是简单的 char 转 int，直接赋值就可以了。
+
+```java
+int a = 'a';
+```
+
+因为发生了[自动类型转换](https://tobebetterjavaer.com/basic-grammar/type-cast.html)。
+
+
+
+## 引用数据类型
 
 基本数据类型在作为成员变量和静态变量的时候有默认值，引用数据类型也有的。
 
@@ -325,6 +395,12 @@ public class ArrayList<E> extends AbstractList<E>
 
 这么说就理解了吧？
 
-“好了，三妹，关于 Java  中的数据类型就先说这么多吧，你是不是已经清楚了？”转动了一下僵硬的脖子后，我对三妹说。
+“好了，三妹，关于 Java 中的数据类型就先说这么多吧，你是不是已经清楚了？”转动了一下僵硬的脖子后，我对三妹说。
+
+---
+
+最近整理了一份牛逼的学习资料，包括但不限于Java基础部分（JVM、Java集合框架、多线程），还囊括了 **数据库、计算机网络、算法与数据结构、设计模式、框架类Spring、Netty、微服务（Dubbo，消息队列） 网关** 等等等等……详情戳：[可以说是2022年全网最全的学习和找工作的PDF资源了](https://tobebetterjavaer.com/pdf/programmer-111.html)
+
+关注二哥的原创公众号 **沉默王二**，回复**111** 即可免费领取。
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/xingbiaogongzhonghao.png)

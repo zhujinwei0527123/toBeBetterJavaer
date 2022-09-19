@@ -1,11 +1,17 @@
 ---
+title: 深入剖析Java中的拆箱和装箱
+shortTitle: 深入剖析Java中的拆箱和装箱
 category:
   - Java核心
 tag:
-  - Java
+  - Java重要知识点
+description: Java程序员进阶之路，小白的零基础Java教程，从入门到进阶，深入剖析Java中的拆箱和装箱
+head:
+  - - meta
+    - name: keywords
+      content: Java,Java SE,Java基础,Java教程,Java程序员进阶之路,Java入门,教程,装箱,拆箱,包装类型
 ---
 
-# 深入剖析Java中的拆箱和装箱
 
 “哥，听说 Java 的每个基本类型都对应了一个包装类型，比如说 int 的包装类型为 Integer，double 的包装类型为 Double，是这样吗？”从三妹这句话当中，能听得出来，她已经提前预习这块内容了。
 
@@ -257,5 +263,11 @@ System.out.println(t2-t1);
 “哇，sum 为 Long 型的时候，足足运行了 5825 毫秒；sum 为 long 型的时候，只需要 679 毫秒。”
 
 “好了，三妹，今天的主题就先讲到这吧。我再去来根华子。”
+
+----
+
+最近整理了一份牛逼的学习资料，包括但不限于Java基础部分（JVM、Java集合框架、多线程），还囊括了 **数据库、计算机网络、算法与数据结构、设计模式、框架类Spring、Netty、微服务（Dubbo，消息队列） 网关** 等等等等……详情戳：[可以说是2022年全网最全的学习和找工作的PDF资源了](https://tobebetterjavaer.com/pdf/programmer-111.html)
+
+关注二哥的原创公众号 **沉默王二**，回复**111** 即可免费领取。
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/xingbiaogongzhonghao.png)

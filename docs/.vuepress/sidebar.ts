@@ -1,9 +1,15 @@
 import { sidebar } from "vuepress-theme-hope";
 export const sidebarConfig = sidebar({
-  "/zhishixingqiu/": ["readme.md","first","java-mianshi-zhinan","may","june"],
-  "/download/": ["java","nicearticle", "history"],
-  "/nice-article/itmind/": [
+  "/zhishixingqiu/": [
     "readme.md",
+    "map",
+    "may",
+    "june",
+    "july",
+    "august"
+  ],
+  "/nice-article/itmind/": [
+    "readme",
     "ideapxideajhideayjjhmideazxjhzcmpjjcyjjhqcyx",
     "yigkymxczideatsyqdffblwxjcywdxbxt",
     "ideapjazjczxjhmzcmyjjhcxgxz",
@@ -13,6 +19,22 @@ export const sidebarConfig = sidebar({
     "typorayjpx",
     "typoramaczwpjbhyjjdkptmarkdownbjqmksimacsocom",
     "xshellazpjbjcxshellpxffxbxt",
+    "pycharmjhpxmazjcnyrgxxbxt",
+    "yang1",
+  ],
+  "/pdf/": [
+    "java",
+    "programmer-111",
+    "java-concurrent",
+    "github-java-jiaocheng-115-star",
+    "shejimoshi",
+    "java-leetcode",
+    "ali-java-shouce",
+    "yuanyifeng-c-language",
+    "bat-shuati",
+    "os",
+    "progit",
+    "jianli",
   ],
   "/xuexiluxian/": [
     {
@@ -25,8 +47,8 @@ export const sidebarConfig = sidebar({
         "jvm",
       ],
     },
-    "c.md",
-    "ccc.md",
+    "c",
+    "ccc",
     "python",
     "go",
     "os",
@@ -34,24 +56,27 @@ export const sidebarConfig = sidebar({
     "algorithm",
     "lanqiaobei",
     "bigdata",
+    "android",
   ],
   "/sidebar/sanfene/": [
-    "javase.md",
-    "collection.md",
-    "javathread.md",
-    "jvm.md",
-    "spring.md",
-    "redis.md",
-    "mybatis.md",
-    "mysql.md",
-    "os.md",
-    
+    "nixi",
+    "javase",
+    "collection",
+    "javathread",
+    "jvm",
+    "spring",
+    "redis",
+    "mybatis",
+    "mysql",
+    "os",
+    "network",
+    "rocketmq",
   ],
   // 必须放在最后面
   "/": [
     {
       text: "一、前言",
-      link: "home.md",
+      link: "home",
     },
     {
       text: "二、Java核心",
@@ -71,152 +96,54 @@ export const sidebarConfig = sidebar({
           ],
         },
         {
-          text: "2.2 Java基础语法",
+          text: "2.2 Java语法基础",
           collapsable: true,
           children: [
-          {
-            text: "基本数据类型",
-            link: "basic-grammar/basic-data-type",
-          },
-          {
-            text: "流程控制语句",
-            link: "basic-grammar/flow-control",
-          },
-          {
-            text: "运算符",
-            link: "basic-grammar/operator",
-          },
-          {
-            text: "注释",
-            link: "basic-grammar/javadoc",
-          },
-          {
-            text: "关键字",
-            link: "basic-extra-meal/48-keywords",
-          },
-          {
-            text: "命名规范",
-            link: "basic-extra-meal/java-naming",
-          },
+          "basic-extra-meal/48-keywords",
+          "basic-extra-meal/java-naming",
+          "basic-grammar/javadoc",
+          "basic-grammar/basic-data-type",
+          "basic-grammar/type-cast",
+          "basic-grammar/operator",
+          "basic-grammar/flow-control",
           ],
         },
         {
-          text: "2.3 面向对象编程",
+          text: "2.3 数组&字符串",
           collapsable: true,
           children: [
-          {
-            text: "对象和类",
-            link: "oo/object-class",
-          },
-          {
-            text: "变量",
-            link: "oo/var",
-          },
-          {
-            text: "方法",
-            link: "oo/method",
-          },
-          {
-            text: "构造方法",
-            link: "oo/construct",
-          },
-          "nice-article/bokeyuan-jianxijavazhongdifangwenquanxiankongzhi",
-          {
-            text: "代码初始化块",
-            link: "oo/code-init",
-          },
-          {
-            text: "抽象类",
-            link: "oo/abstract",
-          },
-          {
-            text: "接口",
-            link: "oo/interface",
-          },
-          {
-            text: "内部类",
-            link: "oo/inner-class",
-          },
-          {
-            text: "static",
-            link: "oo/static",
-          },
-          {
-            text: "this 和 super",
-            link: "oo/this-super",
-          },
-          {
-            text: "final",
-            link: "oo/final",
-          },
-          {
-            text: "instanceof",
-            link: "oo/instanceof",
-          },
-          {
-            text: "不可变对象",
-            link: "basic-extra-meal/immutable",
-          },
-          {
-            text: "可变参数",
-            link: "basic-extra-meal/varables",
-          },
-          {
-            text: "泛型",
-            link: "basic-extra-meal/generic",
-          },
-          {
-            text: "注解",
-            link: "basic-extra-meal/annotation",
-          },
-          {
-            text: "枚举",
-            link: "basic-extra-meal/enum",
-          },
-          {
-            text: "反射",
-            link: "basic-extra-meal/fanshe",
-          },
-          
+          "array/array",
+          "array/print",
+          "string/immutable",
+          "string/constant-pool",
+          "string/intern",
+          "string/equals",
+          "string/join",
+          "string/split",
           ],
         },
         {
-          text: "2.4 字符串&数组",
+          text: "2.4 面向对象编程",
           collapsable: true,
           children: [
-        
-          {
-            text: "字符串为什么是不可变的",
-            link: "string/immutable",
-          },
-          {
-            text: "字符串常量池",
-            link: "string/constant-pool",
-          },
-          {
-            text: " String#intern",
-            link: "string/intern",
-          },
-          {
-            text: "字符串比较",
-            link: "string/equals",
-          },
-          {
-            text: "字符串拼接",
-            link: "string/join",
-          },
-          {
-            text: "字符串分割",
-            link: "string/split",
-          },
-          {
-            text: "数组",
-            link: "array/array",
-          },
-          {
-            text: "打印数组",
-            link: "array/print",
-          },
+          "oo/object-class",
+          "oo/package",
+          "oo/var",
+          "oo/method",
+          "oo/construct",
+          "oo/access-control",
+          "oo/code-init",
+          "oo/abstract",
+          "oo/interface",
+          "oo/abstract-vs-interface",
+          "oo/inner-class",
+          "oo/this-super",
+          "basic-extra-meal/override-overload",
+          "oo/static",
+          "oo/final",
+          "oo/encapsulation",
+          "oo/extends-bigsai",
+          "oo/polymorphism",
           
           ],
         },
@@ -225,34 +152,18 @@ export const sidebarConfig = sidebar({
           collapsable: true,
           children: [
           
-          {
-            text: "概述",
-            link: "collection/gailan",
-          },
-          {
-            text: "ArrayList",
-            link: "collection/arraylist",
-          },
-          {
-            text: "LinkedList",
-            link: "collection/linkedlist",
-          },
-          {
-            text: "ArrayList和LinkedList的区别",
-            link: "collection/list-war-2",
-          },
-          {
-            text: "Iterator和Iterable",
-            link: "collection/iterator-iterable",
-          },
-          {
-            text: "fail-fast",
-            link: "collection/fail-fast",
-          },
-          {
-            text: "HashMap",
-            link: "collection/hashmap",
-          },
+          "collection/gailan",
+          "collection/arraylist",
+          "collection/linkedlist",
+          "collection/list-war-2",
+          "collection/iterator-iterable",
+          "collection/fail-fast",
+          "collection/hashmap",
+          "collection/linkedhashmap",
+          "collection/treemap",
+          "collection/arraydeque",
+          "collection/PriorityQueue",
+          "collection/WeakHashMap",
          
           ],
         },
@@ -261,14 +172,16 @@ export const sidebarConfig = sidebar({
           collapsable: true,
           prefix:"io/",
           children: [
-          {
-            text: "概览",
-            link: "shangtou",
-          },
-          {
-            text: "BIO、NIO和AIO",
-            link: "BIONIOAIO",
-          },
+          "shangtou",
+          "file-path",
+          "stream",
+          "reader-writer",
+          "buffer",
+          "char-byte",
+          "serialize",
+          "Serializbale",
+          "transient",
+          "print",
           ],
         },
         {
@@ -276,22 +189,10 @@ export const sidebarConfig = sidebar({
           collapsable: true,
           prefix:"exception/",
           children: [
-          {
-            text: "概览",
-            link: "gailan",
-          },
-          {
-            text: "try-with-resouces",
-            link: "try-with-resouces",
-          },
-          {
-            text: "最佳实践",
-            link: "shijian",
-          },
-          {
-            text: "NullPointerException",
-            link: "npe",
-          },
+          "gailan",
+          "try-with-resouces",
+          "shijian",
+          "npe",
           ],
         },
         {
@@ -299,22 +200,11 @@ export const sidebarConfig = sidebar({
           collapsable: true,
           prefix:"common-tool/",
           children: [
-          {
-            text: "Arrays",
-            link: "arrays",
-          },
-          {
-            text: "Collections",
-            link: "collections",
-          },
-          {
-            text: "Hutool",
-            link: "hutool",
-          },
-          {
-            text: "Guava",
-            link: "guava",
-          },
+          "arrays",
+          "collections",
+          "hutool",
+          "guava",
+          "utils",
           ],
         },
         {
@@ -322,18 +212,9 @@ export const sidebarConfig = sidebar({
           prefix: "java8/",
           collapsable: true,
           children: [
-          {
-            text: "Stream",
-            link: "stream",
-          },
-          {
-            text: "Optional",
-            link: "optional",
-          },
-          {
-            text: "Lambda",
-            link: "Lambda",
-          },
+          "stream",
+          "optional",
+          "Lambda",
           ],
         },
         {
@@ -341,262 +222,112 @@ export const sidebarConfig = sidebar({
           prefix:"basic-extra-meal/",
           collapsable: true,
           children: [
-          {
-            text: "Unicode和UTF-8编码",
-            link: "java-unicode",
-          },
-          {
-            text: "new Integer和Integer.valueOf区别",
-            link: "int-cache",
-          },
-          {
-            text: "拆箱和装箱",
-            link: "box",
-          },
-          {
-            text: "浅拷贝与深拷贝",
-            link: "deep-copy",
-          },
-          {
-            text: "深入理解Java中的hashCode方法",
-            link: "hashcode",
-          },
-          {
-            text: "重写equals时为什么要重写hashCode",
-            link: "equals-hashcode",
-          },
-          {
-            text: "重写和重载的区别",
-            link: "override-overload",
-          },
-          {
-            text: "重写时应当遵守的11条规则",
-            link: "Overriding",
-          },
-          {
-            text: "Java到底是值传递还是引用传递",
-            link: "pass-by-value",
-          },
-          {
-            text: "Java为什么不能实现真正的泛型",
-            link: "true-generic",
-          },
-          {
-            text: "Comparable和Comparator的区别",
-            link: "comparable-omparator",
-          },
-          {
-            text: "JDK9中String为什么由char[]改成byte[]",
-            link: "jdk9-char-byte-string",
-          },
-          {
-            text: "JDK源码无限循环用for(;;)还是while(true)",
-            link: "jdk-while-for-wuxian-xunhuan",
-          },
-          {
-            text: "先有Class还是先有Object",
-            link: "class-object",
-          },
-          {
-            text: "instanceof关键字是如何实现的",
-            link: "instanceof-jvm",
-          },
+          "java-unicode",
+          "int-cache",
+          "box",
+          "deep-copy",
+          "hashcode",
+          "equals-hashcode",
+          "Overriding",
+          "pass-by-value",
+          "comparable-omparator",
+          "jdk9-char-byte-string",
+          "jdk-while-for-wuxian-xunhuan",
+          "class-object",
+          "instanceof",
+          "instanceof-jvm",
+          "immutable",
+          "varables",
+          "generic",
+          "true-generic",
+          "annotation",
+          "enum",
+          "fanshe",
           ],
         },
         {
-          text: "2.11 并发编程",
+          text: "2.11 网络编程",
+          collapsable: true,
+          prefix: "socket/",
+          children: [
+            "socket",
+            "http",
+          ],
+        },
+        {
+          text: "2.12 NIO",
+          collapsable: true,
+          prefix: "nio/",
+          children: [
+            "why",
+            "rumen",
+            "moxing",
+            "network-connect",
+            "BIONIOAIO",
+          ],
+        },
+        {
+          text: "2.13 并发编程",
           collapsable: true,
           prefix: "thread/",
           children: [
           "wangzhe-thread",
-          {
-            text: "线程的6种状态及切换",
-            link: "thread-state-and-method",
-          },
-          {
-            text: "线程组和线程优先级",
-            link: "thread-group-and-thread-priority",
-          },
-          {
-            text: "进程与线程的区别",
-            link: "why-need-thread",
-          },
-          {
-            text: "并发编程带来了哪些问题",
-            link: "thread-bring-some-problem",
-          },
-          {
-            text: "Java内存模型",
-            link: "jmm",
-          },
-          {
-            text: "volatile",
-            link: "volatile",
-          },
-          {
-            text: "synchronized",
-            link: "synchronized",
-          },
-          {
-            text: "CAS的原理",
-            link: "cas",
-          },
-          {
-            text: "AQS详解",
-            link: "aqs",
-          },
-          {
-            text: "锁",
-            link: "lock",
-          },
-          {
-            text: "重入锁ReentrantLock",
-            link: "reentrantLock",
-          },
-          {
-            text: "读写锁ReentrantReadWriteLock",
-            link: "ReentrantReadWriteLock",
-          },
-          {
-            text: "线程协作类Condition",
-            link: "condition",
-          },
-          {
-            text: "线程阻塞唤醒类LockSupport",
-            link: "LockSupport",
-          },
-          {
-            text: "并发集合容器",
-            link: "map",
-          },
-          {
-            text: "ConcurrentHashMap",
-            link: "ConcurrentHashMap",
-          },
-          {
-            text: "ConcurrentLinkedQueue",
-            link: "ConcurrentLinkedQueue",
-          },
-          {
-            text: "CopyOnWriteArrayList",
-            link: "CopyOnWriteArrayList",
-          },
-          {
-            text: "ThreadLocal",
-            link: "ThreadLocal",
-          },
-          {
-            text: "BlockingQueue",
-            link: "BlockingQueue",
-          },
-          {
-            text: "线程池",
-            link: "pool",
-          },
-          {
-            text: "计划任务",
-            link: "ScheduledThreadPoolExecutor",
-          },
-          {
-            text: "原子操作类",
-            link: "atomic",
-          },
-          {
-            text: "通信工具类CountDownLatch",
-            link: "CountDownLatch",
-          },
-          {
-            text: "Fork/Join框架",
-            link: "fork-join",
-          },
-          {
-            text: "生产者-消费者模式",
-            link: "shengchanzhe-xiaofeizhe",
-          },
-
+          "thread-state-and-method",
+          "thread-group-and-thread-priority",
+          "why-need-thread",
+          "thread-bring-some-problem",
+          "jmm",
+          "volatile",
+          "synchronized-1",
+          "synchronized",
+          "cas",
+          "aqs",
+          "lock",
+          "suo",
+          "pianxiangsuo",
+          "reentrantLock",
+          "ReentrantReadWriteLock",
+          "condition",
+          "LockSupport",
+          "map",
+          "ConcurrentHashMap",
+          "ConcurrentLinkedQueue",
+          "CopyOnWriteArrayList",
+          "ThreadLocal",
+          "BlockingQueue",
+          "pool",
+          "ScheduledThreadPoolExecutor",
+          "atomic",
+          "CountDownLatch",
+          "fork-join",
+          "shengchanzhe-xiaofeizhe",
           ],
         },
         {
-          text: "2.12 JVM",
+          text: "2.14 JVM",
           prefix: "jvm/",
           collapsable: true,
           children: [
-          {
-            text: "JVM到底是什么？",
-            link: "what-is-jvm",
-          },
-          {
-            text: "JVM到底是如何运行Java代码的",
-            link: "how-run-java-code",
-          },
-          {
-            text: "类加载机制",
-            link: "class-load",
-          },
-          {
-            text: "详解Java的类文件结构",
-            link: "class-file-jiegou",
-          },
-          {
-            text: "从javap的角度轻松看懂字节码",
-            link: "bytecode",
-          },
-          {
-            text: "字节码指令详解",
-            link: "zijiema-zhiling",
-          },
-          {
-            text: "虚拟机是如何执行字节码指令的",
-            link: "how-jvm-run-zijiema-zhiling",
-          },
-          {
-            text: "HSDB（Hotspot Debugger）",
-            link: "hsdb",
-          },
-          {
-            text: "史上最通俗易懂的ASM教程",
-            link: "asm",
-          },
-          {
-            text: "自己编译JDK",
-            link: "compile-jdk",
-          },
-          {
-            text: "深入理解JVM的内存结构",
-            link: "neicun-jiegou",
-          },
-          {
-            text: "Java 创建的对象到底放在哪",
-            link: "whereis-the-object",
-          },
-          {
-            text: "从头到尾说一次Java垃圾回收",
-            link: "gc",
-          },
-          {
-            text: "图解Java的垃圾回收机制",
-            link: "tujie-gc",
-          },
-          {
-            text: "Java问题诊断和排查工具",
-            link: "problem-tools",
-          },
-          {
-            text: "JIT原理解析及实践",
-            link: "jit",
-          },
-          {
-            text: "内存溢出排查优化实战",
-            link: "oom",
-          },
-          {
-            text: "CPU 100% 排查优化实践",
-            link: "cpu-percent-100",
-          },
-          {
-            text: "JVM 核心知识点总结",
-            link: "zongjie",
-          },
+          "what-is-jvm",
+          "how-run-java-code",
+          "class-load",
+          "class-file-jiegou",
+          "bytecode",
+          "zijiema-zhiling",
+          "how-jvm-run-zijiema-zhiling",
+          "hsdb",
+          "asm",
+          "compile-jdk",
+          "neicun-jiegou",
+          "whereis-the-object",
+          "gc",
+          "tujie-gc",
+          "meituan-9-gc",
+          "problem-tools",
+          "jit",
+          "oom",
+          "cpu-percent-100",
+          "zongjie",
           
           ],
         },
@@ -610,16 +341,17 @@ export const sidebarConfig = sidebar({
           text: "3.1 开发工具",
           collapsable: true,
           children: [
-          "maven/maven.md",
-          "git/git-qiyuan.md",
-          "nginx/nginx.md",
+          "maven/maven",
+          "git/git-qiyuan",
+          "nginx/nginx",
           ],
         },
         {
           text: "3.2 IDE/编辑器",
           collapsable: true,
           children: [
-          "ide/4-debug-skill.md",
+          "ide/4-debug-skill",
+          "ide/xechat",
           ],
         },
         {
@@ -698,31 +430,27 @@ export const sidebarConfig = sidebar({
           ],
         },
         {
-          text: "3.5 辅助工具",
+          text: "3.5 Netty",
           collapsable: true,
           children: [
-            {
-              text: "高逼格终端工具Tabby",
-              link: "gongju/tabby",
-            },
-            {
-              text: "21世纪人用的终端工具Warp",
-              link: "gongju/warp",
-            },
-            "gongju/choco",
-            "gongju/brew",
-            {
-              text: "数据库设计神器chiner",
-              link: "gongju/chiner",
-            },
-            {
-              text: "数据库操作工具DBeaver",
-              link: "gongju/DBeaver",
-            },
+            "netty/rumen",
           ],
         },
         {
-          text: "3.6 开源轮子",
+          text: "3.6 辅助工具",
+          collapsable: true,
+          children: [
+            "gongju/choco",
+            "gongju/brew",
+            "gongju/tabby",
+            "gongju/warp",
+            "gongju/windterm",
+            "gongju/chiner",
+            "gongju/DBeaver",
+          ],
+        },
+        {
+          text: "3.7 开源轮子",
           collapsable: true,
           children: [
             {
@@ -765,7 +493,7 @@ export const sidebarConfig = sidebar({
           ],
         },
         {
-          text: "3.7 分布式",
+          text: "3.8 分布式",
           collapsable: true,
           children: [
             {
@@ -783,7 +511,7 @@ export const sidebarConfig = sidebar({
           ],
         },
         {
-          text: "3.8 消息队列",
+          text: "3.9 消息队列",
           collapsable: true,
           children: [
             {
@@ -855,35 +583,34 @@ export const sidebarConfig = sidebar({
       collapsable: true,
       children: [
         {
-          text: "面试题集合",
+          text: "面试题&八股文",
           collapsable: true,
+          prefix:"interview/",
           children: [
-            "baguwen/java-basic-34",
-            "collection/hashmap-interview",
-            "mianjing/redis12question",
-            "nginx/40-interview"
-          ],
-        },
-        
-        {
-          text: "背诵版八股文",
-          collapsable: true,
-          children: [
-            "baguwen/java-basic",
-            "baguwen/java-thread",
-            "baguwen/jvm",
-            "sidebar/herongwei/mysql",
+            "java-34",
+            "java-hashmap-13",
+            "redis-12",
+            "mysql-60",
+            "java-basic-baguwen",
+            "java-thread-baguwen",
+            "java-jvm-baguwen",
+            "mianshiguan-bigfile-miaochuan",
+            "mianshiguan-fenkufenbiao",
+            "mianshiguan-youhuiquan",
           ],
         },
         {
           text: "优质面经",
           collapsable: true,
+          prefix:"mianjing/",
           children: [
-            "mianjing/shanganaliyun",
-            "nice-article/weixin/shezynmjfxhelmtttjddd",
-            "nice-article/weixin/xuelybdzheloffer",
-            "nice-article/weixin/huanxgzl",
-            
+            "shanganaliyun",
+            "shezynmjfxhelmtttjddd",
+            "xuelybdzheloffer",
+            "huanxgzl",
+            "quzjlsspdx",
+            "zheisnylzldhzd",
+            "chengxyspnhxagzl",
           ],
         },
         {
@@ -894,6 +621,7 @@ export const sidebarConfig = sidebar({
             "nice-article/weixin/miansmtgl",
             "nice-article/weixin/luoczbmsddyb",
             "nice-article/weixin/youdxzhhmjzlycfx",
+            "nice-article/weixin/zheisnylzldhzd",
           ],
         },
         {
@@ -917,33 +645,27 @@ export const sidebarConfig = sidebar({
       ],
     },
     {
-      text: "七、学习资源",
-      collapsable: true,
-      children: [
-        "download/java.md",
-        "nice-article/weixin-bagwpdf.md",
-        "nice-article/weixin-shenrjcjavabfbchwjdhl.md",
-        "nice-article/weixin-githubxbkdjavajccjyh.md",
-        "nice-article/weixin-shejmsnb.md",
-        "nice-article/weixin-mozdsdzfjavableetcodetxxk.md",
-        "nice-article/yuanyifeng-c-language.md",
-        "nice-article/bat-shuati.md",
-        "nice-article/weixin-piaolwzjztqdtskwlzfpdf.md",
-        "nice-article/progit.md",
-        "nice-article/jianli.md",
-      ],
-    },
-    {
-      text: "八、学习建议",
+      text: "七、学习建议",
       collapsable: true,
       prefix: "xuexijianyi/",
       children: [
+          "LearnCS-ByYourself",
           "read-csapp",
           "electron-information-engineering",
+          "gaokao-zhiyuan-cs",
+          "test-programmer-read-books",
+          "xiaozhao-java-should-master",
+          "chengxuyuan-fuye",
+          "ruhzfzdgzzcxcz",
+          "gaobingfa-jingyan-hsmcomputer",
+          "hr-xinzi",
+          "35-weiji",
+          "20ren-it-quma",
+          "benkesheng-ali-tengxun",
         ],
     },
     {
-      text: "九、知识库搭建",
+      text: "八、知识库搭建",
       collapsable: true,
       prefix: "szjy/",
       children: [
@@ -955,14 +677,14 @@ export const sidebarConfig = sidebar({
         ],
     },
     {
-      text: "十、联系作者",
+      text: "九、联系作者",
       collapsable: true,
       prefix: "about-the-author/",
       children: [
         "bzhan-10wan",
         "zhihu-1000wan",
         "csdn-1000wan",
-        "readme.md",
+        "readme",
         
       ],
     },

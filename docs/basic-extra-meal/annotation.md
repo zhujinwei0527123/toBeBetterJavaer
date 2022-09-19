@@ -1,11 +1,16 @@
 ---
+title: 深入理解Java中的注解
+shortTitle: 深入理解Java中的注解
 category:
   - Java核心
 tag:
-  - Java
+  - Java重要知识点
+description: Java程序员进阶之路，小白的零基础Java教程，从入门到进阶，深入理解Java中的注解
+head:
+  - - meta
+    - name: keywords
+      content: Java,Java SE,Java基础,Java教程,Java程序员进阶之路,Java入门,教程,java,注解,annotation
 ---
-
-# 深入理解Java注解
 
 “二哥，这节讲注解吗？”三妹问。
 
@@ -223,5 +228,12 @@ public class JsonFieldTest {
 “撸个注解好像真没什么难度，但你接下来的那个 JsonSerializer 我还需要再消化一下。”三妹很认真地说。
 
 “嗯，你好好复习下，我看会《编译原理》。”说完我拿起桌子边上的一本书就走了。
+
+
+----
+
+最近整理了一份牛逼的学习资料，包括但不限于Java基础部分（JVM、Java集合框架、多线程），还囊括了 **数据库、计算机网络、算法与数据结构、设计模式、框架类Spring、Netty、微服务（Dubbo，消息队列） 网关** 等等等等……详情戳：[可以说是2022年全网最全的学习和找工作的PDF资源了](https://tobebetterjavaer.com/pdf/programmer-111.html)
+
+关注二哥的原创公众号 **沉默王二**，回复**111** 即可免费领取。
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/xingbiaogongzhonghao.png)

@@ -1,17 +1,23 @@
 ---
+title: Java流程控制语句（if/switch判断语句和while/do-while/for循环语句）
+shortTitle: Java流程控制语句
 category:
   - Java核心
 tag:
-  - Java
+  - Java语法基础
+description: Java程序员进阶之路，小白的零基础Java教程，Java流程控制语句（if/switch判断语句和while/do-while/for循环语句）
+head:
+  - - meta
+    - name: keywords
+      content: Java,Java SE,Java基础,Java教程,Java程序员进阶之路,Java入门,教程,Java流程控制语句,Java判断语句,Java循环语句,if,switch,while,do-while,for
 ---
 
-# Java流程控制语句
 
 “二哥，流程控制语句都有哪些呢？”三妹的脸上泛着甜甜的笑容，她开始对接下来要学习的内容充满期待了，这正是我感到欣慰的地方。
 
 “比如说 if-else、switch、for、while、do-while、return、break、continue 等等，接下来，我们一个个来了解下。”
 
-### 01、if-else 相关
+## 01、if-else 相关
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/control/thirteen-01.png)
 
@@ -216,7 +222,7 @@ public class NestedIfExample {
 女生法定结婚年龄
 ```
 
-### 02、switch 语句
+## 02、switch 语句
 
 switch 语句用来判断变量与多个值之间的相等性。变量的类型可以是 byte、short、int、long，或者对应的包装器类型 Byte、Short、Integer、Long，以及字符串和枚举。
 
@@ -357,7 +363,7 @@ public class SwitchEnumDemo {
 篮球运动员詹姆斯
 ```
 
-### 03、for 循环
+## 03、for 循环
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/control/thirteen-07.png)
 
@@ -516,7 +522,7 @@ public class InfinitiveForExample {
 
 一旦运行起来，就停不下来了，除非强制停止。
 
-### 04、while 循环
+## 04、while 循环
 
 来看一下 while 循环的格式：
 
@@ -598,7 +604,7 @@ public class InfinitiveWhileExample {
 
 把 while 的条件设置为 true，并且循环体中没有 break 关键字的话，程序一旦运行起来，就根本停不下来了，除非强制停止。
 
-### 05、do-while 循环
+## 05、do-while 循环
 
 来看一下 do-while 循环的格式：
 
@@ -683,7 +689,7 @@ public class InfinitiveDoWhileExample {
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/control/thirteen-11.png)
 
-### 06、break
+## 06、break
 
 break 关键字通常用于中断循环或 switch 语句，它在指定条件下中断程序的当前流程。如果是内部循环，则仅中断内部循环。
 
@@ -766,7 +772,7 @@ switch (age) {
 }
 ```
 
-### 07、continue
+## 07、continue
 
 当我们需要在 for 循环或者 （do）while 循环中立即跳转到下一个循环时，就可以使用 continue 关键字，通常用于跳过指定条件下的循环体，如果循环是嵌套的，仅跳过当前循环。
 
@@ -905,5 +911,12 @@ public class ContinueDoWhileDemo {
 ```
 
 注意：同样的，如果把 if 条件中的“i++”省略掉的话，程序就会进入死循环，一直在 continue。
+
+
+---
+
+最近整理了一份牛逼的学习资料，包括但不限于Java基础部分（JVM、Java集合框架、多线程），还囊括了 **数据库、计算机网络、算法与数据结构、设计模式、框架类Spring、Netty、微服务（Dubbo，消息队列） 网关** 等等等等……详情戳：[可以说是2022年全网最全的学习和找工作的PDF资源了](https://tobebetterjavaer.com/pdf/programmer-111.html)
+
+关注二哥的原创公众号 **沉默王二**，回复**111** 即可免费领取。
 
 ![](http://cdn.tobebetterjavaer.com/tobebetterjavaer/images/xingbiaogongzhonghao.png)
